@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Duraka JS • Tornike Kartsivadze • Jano Gazashvili</title>
+
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script type="module" src="deck.js"></script>
+    <script type="module" src="table.js"></script>
+    <script type="module" src="user.js"></script>
+    <script type="module" src="index.js"></script>
+  </head>
+  <body>
+    <div class="base-layout">
+      <button class="base-btn" id="cardDistribution">დარიგება</button>
+      <button class="base-btn" id="retryDistribution">თავიდან</button>
+      <div style="margin-top: 100px">
+        <div id="whosTurn"></div>
+        <div id="whoCuts"></div>
+      </div>
+
+      <div id="actionButtons" style="margin-top: 100px; display: none; flex-direction: column; gap:20px;">
+        <button class="base-btn" id="takeCards">დარიგება</button>
+        <button class="base-btn" id="clearTable">თავიდან</button>
+      </div>
+    </div>
+
+    <div id="opponentCards" class="cards opponentCards"></div>
+
+    <div id="table" class="table">
+      <div></div>
+      <div id="deckTable" class="deck-table">
+        <div id="deckTableCardsOpponent" class="cards table-cards"></div>
+        <div id="deckTableCardsMe" class="cards table-cards"></div>
+      </div>
+      <div id="supplies"></div>
+    </div>
+
+    <div id="yourCards" class="cards"></div>
+  </body>
+</html>
